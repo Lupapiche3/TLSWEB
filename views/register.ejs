@@ -1,0 +1,53 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/png" href="/resources/img/logo.png">
+    <title>TLS WEB</title>
+    <link rel="stylesheet" href="/resources/css/log.css">
+</head>
+
+<body>
+
+    <div class="login-box">
+        <a href="/"><img class="avatar" src="/resources/img/logo.png" alt="logo TLS"></a>
+        <h1>Formulario de registro</h1>
+        <form action="/register" method="POST"> 
+            
+            <label for="user">Usera</label>
+            <input type="text" name ="user" placeholder="user" required>
+
+            <label for="name">Full name</label>
+            <input type="text" name ="name" placeholder="Nombre" required>
+
+            <label for="rol">Rol</label>
+            <select name="rol" id="rol" class="selec-css">
+                <option value="Admin" selected>Admin</option>
+                <option value="Cliente" selected>Cliente</option>
+            </select>
+
+            <label for="pass">Password</label>
+            <input type="password" name ="pass" placeholder="pass" required>
+
+            <input type="submit" value="Registrarse">
+
+        </form>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <% if(typeof alert != "undefined"){ %>
+        <script>
+            Swal.fire({
+                title: ' <%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: '<%= showConfirmButton %>',
+                timer: '<%= timer  %>'
+            }).then(()=>{
+                window.location = '/ <%= ruta  %>'
+            })
+        </script>
+    <% } %>
+</body>
+
+</html>

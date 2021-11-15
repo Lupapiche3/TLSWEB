@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.87);
+    font-size: 18px;
+}
+
+header {
+    background-image: url(../img/FONDO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+#menu {
+    padding: 10px 0;
+}
+
+header #menu ul {
+    margin: 0;
+    padding: 0px;
+}
+
+header #menu ul li {
+    display: inline-block;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+header #menu ul li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+}
+
+header #menu ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+header #menu ul #logo {
+    margin-right: 40%;
+    margin-left: 90px;
+}
+
+.wrap h1 {
+    font-size: 60px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.wrap .store-wrapper .lista-productos .product-item a {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 20px;
+    color: black;
+}
+
+.wrap .store-wrapper .lista-productos .product-item a:hover {
+    color: rgb(92, 22, 22);
+}

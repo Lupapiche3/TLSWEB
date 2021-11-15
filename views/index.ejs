@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/png" href="/resources/img/logo.png">
+    <title>TLS WEB</title>
+    <link rel="stylesheet" href="/resources/css/main.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <header>
+            <h2>El usuario conectado es <%= msg %></h2>
+            <div id="menu">
+                <ul>
+                    <li id="logo">
+                        <a href="#">
+                            <img width=100px height=100px src="/resources/img/logo.png" />
+                        </a>
+                    </li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="productos">Productos</a></li>
+                    <li><a href="#envios">Sistema de Envios</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    
+                </ul>
+            </div>
+
+            <main>
+                <div class="text">
+                    <h1>Tio Lupa Storee</h1>
+                    <p>Compra productos al mejor precio!</p>
+                    <p>
+                        <a href="login"><button>Iniciar sesión</button></a>
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="/resources/img/InstagramCelu.png" width="400" />
+                    <div class="text">
+                        <p>Siguenos en Instagram como: @tls_web</p>
+                    </div>
+                </div>
+            </main>
+        </header>
+        <div class="section" id="envios">
+            <div class="layout layout-left">
+                <div class="text">
+                    <h3>Sistema de envios</h3>
+                    <p>Contamos con un sistema de registro el cual te permite ingresar tu dirección o la dirección de envio y calcular de manera automática el coste final del producto. Contamos con nuestro propio sistema de envios, pero puedes pedir que
+                        mandemos el producto con otra empresa!</p>
+                </div>
+                <div class="image">
+                    <img src="/resources/img/delivery.png" width="800">
+                </div>
+            </div>
+
+            <div class="layout layout-right" id="contacto">
+                <div class="image">
+                    <img src="/resources/img/Instagram-simbolo.png" width="600">
+                </div>
+                <div class="text">
+                    <h3>Contacto</h3>
+                    <p>Para compras o consultas puedes contactarnos por Instagram (@tls_web) o por nuestro mail (tiolupastore@gmail.com). </p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="contacto"></div>
+        <footer>
+            TLS Web. TIENDA OFICIAL DE LUPA
+        </footer>
+    </div>
+</body>
+
+</html>
