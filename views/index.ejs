@@ -13,7 +13,13 @@
 <body>
     <div id="main-container">
         <header>
-            <h2>El usuario conectado es <%= msg %></h2>
+            <% if (login) { %>                
+                <h1>El usuario conectado es:<strong><%= name %></strong> </h1>                        
+                <a href="logout">Logout</a>
+             <%} else { %>
+                <h1><strong><%= name %></strong></h1>   
+                <a href="login" >Ir a Login</a>
+             <% } %>
             <div id="menu">
                 <ul>
                     <li id="logo">

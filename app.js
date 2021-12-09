@@ -37,9 +37,6 @@ app.use(session({
 const connection = require('./database/db');
 
 //Estableciendo rutas
-app.get('/', (req, res)=>{
-    res.render ('index', {msg: 'esto es node'});
-})
 
 app.get('/login', (req, res)=>{
     res.render ('login');
@@ -97,7 +94,8 @@ app.post('/login', async (req, res)=>{
                 })
             }else
             {
-                req.session.name = results[0]
+                req.session.loggedin = true;
+                req.session.name = results[0].name
                 res.render('login',{
                     alert: true,
                     alertTitle: "Conexion exitosa",
@@ -114,7 +112,20 @@ app.post('/login', async (req, res)=>{
     }
 })
 
-
+//Autenticacion en las demas paginas
+app.get('/', (req, res)=>{
+    if(req.session.loggedin){
+        res.render('index',{
+            login: true,
+            name: req.session.name
+        });
+    }else{
+        res.render('index', {
+        login: false,
+        name: 'Debe iniciar sesion'
+    })
+    }
+})
 
 
 
