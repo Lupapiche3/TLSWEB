@@ -35,6 +35,7 @@ app.use(session({
 
 //Invocamos al modulo de conexion de la base de datos
 const connection = require('./database/db');
+const res = require('express/lib/response');
 
 //Estableciendo rutas
 
@@ -49,6 +50,28 @@ app.get('/register', (req, res)=>{
 app.get('/productos', (req, res)=>{
     res.render ('productos');
 })
+
+app.get('/arodeluz', (req, res)=>{
+    res.render ('arodeluz');
+})
+
+app.get('/audifonos', (req, res)=>{
+    res.render ('audifonos');
+})
+
+app.get('/cabletipoc', (req, res)=>{
+    res.render ('cabletipoc');
+})
+
+app.get('/parlante', (req, res)=>{
+    res.render ('parlante');
+})
+
+app.get('/usbc', (req, res)=>{
+    res.render ('usbc');
+})
+
+
 
 //Registro de cuentas
 app.post('/register', async (req, res)=>{
@@ -126,8 +149,6 @@ app.get('/', (req, res)=>{
     })
     }
 })
-
-
 
 
 

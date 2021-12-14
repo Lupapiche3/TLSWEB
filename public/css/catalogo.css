@@ -63,6 +63,7 @@ header #menu ul #logo {
 .wrap .store-wrapper .lista-productos .product-item a:hover {
     color: rgb(92, 22, 22);
 }
+
 .contenedor{
     position: relative;
     display: inline-block;
@@ -88,4 +89,34 @@ header #menu ul #logo {
 .producto-container{
     margin: 15px ;
     padding: 2px 16px;
+}
+
+.producto-container img{
+    width: 450px;
+}
+
+.page-nav h1 {
+    margin: 20px;
+}
+
+.page-nav {
+    background-color: #2196f3;
+    border: 1px solid black;
+}
+
+button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.buttoon-checkout {
+    background-color: white;
+    color: black;
+    border: 2px solid #4caf50;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
 }
