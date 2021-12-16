@@ -9,16 +9,16 @@
 
 <body>
 
-    <div class="login-box">
+    <div class="Slogin-box">
         <a href="/"><img class="avatar" src="/resources/img/logo.png" alt="logo TLS"></a>
         <h1>Formulario de registro</h1>
-        <form action="/register" method="POST"> 
-            
+        <form action="/register" method="POST">
+
             <label for="user">Usera</label>
-            <input type="text" name ="user" placeholder="user" required>
+            <input type="text" name="user" placeholder="user" required>
 
             <label for="name">Full name</label>
-            <input type="text" name ="name" placeholder="Nombre" required>
+            <input type="text" name="name" placeholder="Nombre" required>
 
             <label for="rol">Rol</label>
             <select name="rol" id="rol" class="selec-css">
@@ -27,7 +27,7 @@
             </select>
 
             <label for="pass">Password</label>
-            <input type="password" name ="pass" placeholder="pass" required>
+            <input type="password" name="pass" placeholder="pass" required>
 
             <input type="submit" value="Registrarse">
 
@@ -43,11 +43,11 @@
                 icon: '<%= alertIcon %>',
                 showConfirmButton: '<%= showConfirmButton %>',
                 timer: '<%= timer  %>'
-            }).then(()=>{
+            }).then(() => {
                 window.location = '/ <%= ruta  %>'
             })
         </script>
-    <% } %>
+        <% } %>
 </body>
 
 </html>

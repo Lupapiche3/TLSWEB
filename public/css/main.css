@@ -23,6 +23,29 @@ header {
     color: darkblue;
 }
 
+header h1 {
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+header a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+header h1 strong {
+    color: rgb(0, 128, 0);
+    display: inline-block;
+    padding: 5px;
+    vertical-align: middle;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
 header #menu ul {
     margin: 0;
     padding: 0px;
@@ -37,8 +60,6 @@ header #menu ul li {
 header #menu ul li a {
     color: black;
     text-decoration: none;
-    text-align: center;
-    font-size: 24px;
 }
 
 header #menu ul li a:hover {
@@ -90,7 +111,7 @@ button:hover {
 
 #main-container header main .image {
     text-align: right;
-    width: 700px;
+    width: 750px;
 }
 
 

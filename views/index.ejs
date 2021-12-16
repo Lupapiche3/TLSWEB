@@ -13,43 +13,43 @@
 <body>
     <div id="main-container">
         <header>
-            <% if (login) { %>                
-                <h1>El usuario conectado es:<strong><%= name %></strong> </h1>                        
+            <% if (login) { %>
+                <h1>Usuario: <strong><%= name %></strong></h1>
                 <a href="logout">Logout</a>
-             <%} else { %>
-                <h1><strong><%= name %></strong></h1>   
-                <a href="login" >Ir a Login</a>
-             <% } %>
-            <div id="menu">
-                <ul>
-                    <li id="logo">
-                        <a href="#">
-                            <img width=100px height=100px src="/resources/img/logo.png" />
-                        </a>
-                    </li>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="productos">Productos</a></li>
-                    <li><a href="#envios">Sistema de Envios</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                    
-                </ul>
-            </div>
+                <%} else { %>
+                    <h1><strong><%= name %></strong></h1>
+                    <a href="login">Ir a Login</a>
+                    <% } %>
+                        <div id="menu">
+                            <ul>
+                                <li id="logo">
+                                    <a href="#">
+                                        <img width=100px height=100px src="/resources/img/logo.png" />
+                                    </a>
+                                </li>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="productos">Productos</a></li>
+                                <li><a href="#envios">Sistema de Envios</a></li>
+                                <li><a href="#contacto">CONTACTO</a></li>
 
-            <main>
-                <div class="text">
-                    <h1>Tio Lupa Store</h1>
-                    <p>Compra productos al mejor precio!</p>
-                    <p>
-                        <a href="login"><button>Iniciar sesión</button></a>
-                    </p>
-                </div>
-                <div class="image">
-                    <img src="/resources/img/InstagramCelu.png" width="400" />
-                    <div class="text">
-                        <p>Siguenos en Instagram como: @tls_web</p>
-                    </div>
-                </div>
-            </main>
+                            </ul>
+                        </div>
+
+                        <main>
+                            <div class="text">
+                                <h1>Tio Lupa Storee</h1>
+                                <p>Compra productos al mejor precio!</p>
+                                <p>
+                                    <a href="login"><button>Iniciar sesión</button></a>
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="/resources/img/contacto-social-media-celular.png" width="600" />
+                                <div class="text">
+                                    <p>Siguenos en Instagram como: @tls_web</p>
+                                </div>
+                            </div>
+                        </main>
         </header>
         <div class="section" id="envios">
             <div class="layout layout-left">
