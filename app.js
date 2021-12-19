@@ -70,6 +70,9 @@ app.get('/parlante', (req, res)=>{
 app.get('/usbc', (req, res)=>{
     res.render ('usbc');
 })
+app.get('/pago', (req, res)=>{
+    res.render ('pago');
+})
 
 
 

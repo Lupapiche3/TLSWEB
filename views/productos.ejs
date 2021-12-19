@@ -8,6 +8,7 @@
     <link rel="icon" type="icon/png" href="/resources/img/logo.png">
     <title>TLS WEB</title>
     <link rel="stylesheet" href="/resources/css/catalogo.css">
+    <script src="/resources/scripts.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,8 @@
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/#envios">Sistema de Envios</a></li>
                 <li><a href="/#contacto">CONTACTO</a></li>
-                <button id="checkout" class="button-checkout">Pagar</button>
+                <button id="checkout" class="button-checkout" onclick="pay()">Total</button>
+                <li><a href="/pago">Ir a pagar</a></li>
             </ul>
         </div>
         <div class="wrap">
@@ -33,35 +35,35 @@
                     <div class="contenedor">
                         <a href="arodeluz"><img src="/resources/img/arodeluz.jpg" alt="arodeluz" width="200"></a>
                         <div class="texto-encima"><a href="/arodeluz">Aro de luz 3 en 1</a></div>
-                        <h3>$6.990</h3><button onclick="add('Aro-de-luz', 6990)">Agregar</button>
+                        <h3>$6.990</h3><button class="button-add" onclick="add('arodeluz', 6990)">Agregar</button>
                     </div>
                 </div>
                 <div class="producto-container">
                     <div class="contenedor">
                         <a href="audifonos"><img src="/resources/img/AUDIFONOS.jpg" alt="Audífonos Bluetooth" width="200"></a>
                         <div class="texto-encima"><a href="/audifonos">Audífonos Bluetooth</a></div>
-                        <h3>$8.490</h3><button onclick="add('Audifonos-Bluetooth', 9990)">Agregar</button>
+                        <h3>$8.490</h3><button class="button-add" onclick="add('audifono', 8490)">Agregar</button>
                     </div>
                 </div>
                 <div class="producto-container">
                     <div class="contenedor">
                         <a href="cabletipoc"><img src="/resources/img/cabletipoc.jpg" alt="Cable tipo C" width="200"></a>
                         <div class="texto-encima"><a href="/cabletipoc">Cable tipo C</a></div>
-                        <h3>$3.490</h3><button onclick="add('Cable-tipo-c', 4990)">Agregar</button>
+                        <h3>$3.490</h3><button class="button-add" onclick="add('cabletipoc', 3490)">Agregar</button>
                     </div>
                 </div>
                 <div class="producto-container">
                     <div class="contenedor">
                         <a href="parlante"><img src="/resources/img/parlante.jpg" alt="Parlante Bluetooth" width="300"></a>
                         <div class="texto-encima"><a href="/parlante">Parlante Bluetooth</a></div>
-                        <h3>$8.490</h3><button onclick="add('Parlante-Bluetooth', 9990)">Agregar</button>
+                        <h3>$8.490</h3><button class="button-add" onclick="add('parlante', 8490)">Agregar</button>
                     </div>
                 </div>
                 <div class="producto-container">
                     <div class="contenedor">
                         <a href="usbc"><img src="/resources/img/USB-C to Lightning.jpg" alt="USB-C to Lightning" width="200"></a>
                         <div class="texto-encima"><a href="/usbc">USB-C to Lightning</a></div>
-                        <h3>$4.990</h3><button onclick="add('USB-C', 9990)">Agregar</button>
+                        <h3>$4.990</h3><button class="button-add" onclick="add('usbc', 4990)">Agregar</button>
                     </div>
                 </div>
                 </section>

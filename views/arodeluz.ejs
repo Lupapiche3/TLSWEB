@@ -8,6 +8,7 @@
     <link rel="icon" type="icon/png" href="/resources/img/logo.png">
     <title>TLS WEB</title>
     <link rel="stylesheet" href="/resources/css/catalogo.css">
+    <script src="/resources/scripts.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
                 </li>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/#envios">Sistema de Envios</a></li>
-                <li><a href="/#contacto">CONTACTO</a></li>
-                <button id="checkout" class="button-checkout">Pagar</button>
+                <li><a href="productos">Productos</a></li>
+                <button id="checkout" class="button-checkout" onclick="pay()">Total</button>
             </ul>
         </div>
     </header>
@@ -30,9 +31,49 @@
     <section class="lista-productos"></section>
     <div class="producto-container">
         <div class="contenedor">
-            <img src="/resources/img/arodeluz.jpg" alt="arodeluz" width="400">
-            <div class="texto-encima"><a href="/arodeluz">Aro de luz 3 en 1</a></div>
-            <h3>$6.990</h3><button onclick="add('Aro', 9990)">Agregar</button>
+            <p>
+                <img src="/resources/img/arodeluz.jpg" alt="arodeluz" width="400" align="left"> Aro de luz con soporte
+                <ul>
+    
+                    <li>
+                        Cuenta con una iluminación LED RGB, con luz blanca y cálida de intensidades ajustables, perfecta para tus reuniones de teletrabajo o selfies.
+                    </li>  
+                    Características: 
+                    <li>
+                        Incluye Trípode regulable de 90 cm hasta 165 cm
+                    </li>
+                    <li>
+                        Rotación en 360º para ajuste de múltiples ángulos
+                    </li>
+                    <li>
+                        Al conectarse con un puerto USB se pueden usar con múltiples dispositivos. 
+                    </li>
+                    <li>
+                        Perfecto para la creación de videos, fotografías y video llamadas.
+                    </li>
+                    <li>
+                        Características Técnicas: 
+                    </li>
+                    <li>
+                        Potencia 10 W
+                    </li>
+                    <li>
+                        Diámetro Aro de Luz: 12 cm
+                    </li>
+                    <li>
+                        Luminiscencia: 20-1000Lm
+                    </li>
+                    <li>
+                        Interfaz: USB
+                    </li>
+                    <li>
+                        Material: ABS + PC
+                    </li>
+    
+                </ul>
+    
+                <h3>$6.990</h3><button class="button-add" onclick="add('arodeluz', 6990)">Agregar</button>
+            </p>
         </div>
     </div>
     </section>

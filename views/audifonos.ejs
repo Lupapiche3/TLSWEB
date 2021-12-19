@@ -8,6 +8,7 @@
     <link rel="icon" type="icon/png" href="/resources/img/logo.png">
     <title>TLS WEB</title>
     <link rel="stylesheet" href="/resources/css/catalogo.css">
+    <script src="/resources/scripts.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
                 </li>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/#envios">Sistema de Envios</a></li>
-                <li><a href="/#contacto">CONTACTO</a></li>
-                <button id="checkout" class="button-checkout">Pagar</button>
+                <li><a href="productos">Productos</a></li>
+                <button id="checkout" class="button-checkout" onclick="pay()">Total</button>
             </ul>
         </div>
     </header>
@@ -30,9 +31,37 @@
     <section class="lista-productos"></section>
     <div class="producto-container">
         <div class="contenedor">
-            <img src="/resources/img/AUDIFONOS.jpg" alt="Audífonos Bluetooth" width="400">
-            <div class="texto-encima"><a href="/audífonos">Audífonos Bluetooth</a></div>
-            <h3>$8.490</h3><button onclick="add('Audifonos-Bluetooth', 9990)">Agregar</button>
+            <p>
+                <img src="/resources/img/AUDIFONOS.jpg" alt="Audífonos Bluetooth" width="400" align="left"> Audifonos Bluetooth
+                <ul>
+    
+                    <li>
+                        Auriculares inalámbricos Mini-2 con Bluetooth, color Macaron mate, con micrófono y caja de carga
+                    </li>
+                    Caracteristicas
+                    <li>
+                        Cancelación de ruido activa: Sí
+                    </li>
+                    <li>
+                        Tipo inalámbrico: Bluetooth
+                    </li>
+                    <li>
+                        Salida máxima: 10mW
+                    </li>
+                    <li>
+                        Función: Para teléfono móvil
+                    </li>
+                    <li>
+                        Conectores: 3,5 mm
+                    </li>
+                    <li>
+                        Peso: 21,4 g
+                    </li>
+    
+                </ul>
+    
+                <h3>$8.490</h3><button class="button-add" onclick="add('arodeluz', 8490)">Agregar</button>
+            </p>
         </div>
     </div>
     </section>

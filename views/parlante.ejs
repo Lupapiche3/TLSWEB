@@ -8,6 +8,7 @@
     <link rel="icon" type="icon/png" href="/resources/img/logo.png">
     <title>TLS WEB</title>
     <link rel="stylesheet" href="/resources/css/catalogo.css">
+    <script src="/resources/scripts.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
                 </li>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/#envios">Sistema de Envios</a></li>
-                <li><a href="/#contacto">CONTACTO</a></li>
-                <button id="checkout" class="button-checkout">Pagar</button>
+                <li><a href="productos">Productos</a></li>
+                <button id="checkout" class="button-checkout" onclick="pay()">Total</button>
             </ul>
         </div>
     </header>
@@ -30,9 +31,40 @@
     <section class="lista-productos"></section>
     <div class="producto-container"></div>
     <div class="contenedor">
-        <img src="/resources/img/parlante.jpg" alt="Parlante Bluetooth" width="400">
-        <div class="texto-encima"><a href="/parlante">Parlante Bluetooth</a></div>
-        <h3>$8.490</h3><button onclick="add('Parlante-Bluetooth', 9990)">Agregar</button>
+        <p>
+            <img src="/resources/img/parlante.jpg" alt="Parlante Bluetooth" width="400" align="left"> 
+            <ul>
+
+                <li>
+                    Parlante Bluethoot
+                </li>
+                Caracteristicas
+                <li>
+                    Altavoz de alta potencia de 5W + diafragma de graves, el efecto de sonido es mejor
+                </li>
+                <li>
+                    Función de llamada manos libres
+                </li>
+                <li>
+                    Batería de 1200 mAh para hasta 8 horas de juego a un volumen del 2/3 con una carga completa
+                </li>
+                <li>
+                    Especificaciones
+                </li>
+                <li>
+                    Versión inalámbrica: V5.0
+
+                </li>
+                <li>
+                    Distancia de conexión: 10 metros
+                </li>
+                <li>
+                    Tiempo de carga: 2-3 horas
+                </li>
+            </ul>
+
+            <h3>$8.490</h3><button class="button-add" onclick="add('arodeluz', 8490)">Agregar</button>
+        </p>
     </div>
     </div>
     </section>
