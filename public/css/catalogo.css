@@ -10,7 +10,7 @@ header {
     background-image: url(../img/FONDO.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     color: black;
     background-color: rgb(255, 255, 255);
 }
@@ -132,22 +132,25 @@ button {
     border: black;
     padding: 40px 125px;
 }
+
 .button-add {
     background-color: white;
     color: black;
-    border: 2px solid #4CAF50; /* Green */
+    border: 2px solid #4CAF50;
+    /* Green */
     transition-duration: 0.4s;
 }
 
 .button-add:hover {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     color: white;
 }
 
 .button-add.disabled {
     background-color: white;
     color: black;
-    border: 2px solid #9e9e9e; 
+    border: 2px solid #9e9e9e;
     transition-duration: 0.4s;
     position: absolute;
     right: 15px;
@@ -155,7 +158,7 @@ button {
 }
 
 .button-add.disabled:hover {
-    background-color: #9e9e9e; 
+    background-color: #9e9e9e;
     color: white;
 }
 
@@ -198,6 +201,32 @@ button {
 }
 
 input {
-    border-radius: 4px;
-    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+    border: 1px solid #ff5959;
+}
+
+.lista-productos {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-size: auto;
+}
+
+.producto-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    content: center;
+}
+
+.producto-container img {
+    margin-top: 40px;
+    content: center;
+}
+
+.contenedor {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
 }
